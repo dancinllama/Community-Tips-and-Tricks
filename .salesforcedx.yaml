@@ -1,4 +1,4 @@
-cratch-org-def: config/project-scratch-def.json
+scratch-org-def: config/project-scratch-def.json
 assign-permset: false
 run-apex-tests: false
 delete-scratch-org: false
