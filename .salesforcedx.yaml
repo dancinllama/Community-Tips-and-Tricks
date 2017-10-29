@@ -1,6 +1,5 @@
 cratch-org-def: config/project-scratch-def.json
-assign-permset: true
-permset-name: nto
+assign-permset: false
 run-apex-tests: false
 delete-scratch-org: false
 show-scratch-org-url: true
