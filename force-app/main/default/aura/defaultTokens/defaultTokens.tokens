@@ -1,6 +1,0 @@
-<aura:tokens extends="force:base">
-	<aura:token name="headerBackground" value="#225B33"/>
-    <aura:token name="inverseText" value="{!colorBackgroundButtonBrand}"/>
-    <aura:token name="inverseBackground" value="{!colorTextButtonBrand}"/>
-    <aura:token name="headingTextShadow" value="3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,-1px 1px 0 #000, 1px 1px 0 #000" />
-</aura:tokens>

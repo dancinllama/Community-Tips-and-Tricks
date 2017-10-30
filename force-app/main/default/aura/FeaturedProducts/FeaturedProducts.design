@@ -1,7 +1,0 @@
-<design:component >
-    <design:attribute name="smallColumns" label="# of columns to display in mobile" />
-    <design:attribute name="mediumColumns" label="# of columns to display in medium resolutions" />
-    <design:attribute name="largeColumns" label="# of columns to display in large resolutions" />
-    <design:attribute name="label" label="Label of the list" default="Featured Products"/>
-    <design:attribute name="listLabel" label="Label of the list (DO NOT USE)" default="Featured Products"/>
-</design:component>

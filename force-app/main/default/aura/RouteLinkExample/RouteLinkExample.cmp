@@ -1,6 +1,0 @@
-<aura:component implements="forceCommunity:availableForAllPageTypes">
-    <aura:attribute name="recordId" type="String" default="{!v.recordId}" />
-    <aura:attribute name="routeInput" type="Map"/>
-    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/> 
-    <forceCommunity:routeLink  title="My Case" routeInput="{!v.routeInput}" />                     
-</aura:component>
