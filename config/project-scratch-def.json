@@ -1,7 +1,12 @@
 {
-    "orgName": "dancinllama Tricks",
-    "edition": "Developer",
-    "orgPreferences" : {
-        "enabled": ["S1DesktopEnabled"]
-    }
+  "country": "US",
+  "edition": "Developer",
+  "orgPreferences": {
+    "enabled": [
+      "S1DesktopEnabled"
+    ],
+    "disabled": []
+  },
+  "orgName": "Your Company",
+  "adminEmail": "yourname@example.com"
 }
