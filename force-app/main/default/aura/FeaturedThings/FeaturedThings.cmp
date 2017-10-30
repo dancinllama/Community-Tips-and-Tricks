@@ -1,0 +1,23 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+    <aura:attribute name="largeColumns" type="Integer" default="1" />
+    <aura:attribute name="mediumColumns" type="Integer" default="1" />
+    <aura:attribute name="smallColumns" type="Integer" default="1" />
+    <aura:attribute name="label" type="String" />
+    <aura:iteration items="{!v.records}" var="record">
+        <lightning:layoutItem flexibility="auto"
+            padding="around-small"
+            size="{!12 / v.largeColumns}"
+            largeDeviceSize="{!12 / v.largeColumns}"
+            mediumDeviceSize="{!12 / v.mediumColumns}"
+            smallDeviceSize="{!12 / v.smallColumns}">
+            <div class="slds-col fullHeight">
+                <div class="slds-box fullHeight">
+                    <lightning:tile label="{!record.Product2.Name}" href="{!record.Product2.Id}">
+                        <p><img src="{!record.Product2.Image_URL__c}" /></p>
+                        <p><lightning:button label="{!record.UnitPrice}" /></p>
+                    </lightning:tile>
+                </div>
+            </div>
+        </lightning:layoutItem>
+    </aura:iteration>
+</aura:component>

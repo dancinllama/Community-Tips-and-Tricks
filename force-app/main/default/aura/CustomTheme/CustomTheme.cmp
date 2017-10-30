@@ -1,0 +1,32 @@
+<aura:component implements="forceCommunity:themeLayout" >
+
+    <!-- Pre-defined set of Napili regions to include; each must be defined as an Aura attribute -->
+    <aura:attribute name="navBar" type="Aura.Component[]" required="false" />
+    <aura:attribute name="profileMenu" type="Aura.Component[]" required="false"/>
+    <aura:attribute name="search" type="Aura.Component[]" required="false" />
+    <aura:attribute name="newHeader" type="Aura.Component[]" required="false" />
+    <!-- Theme Layout Markup -->
+    <div class="parentDiv">
+    <div class="mainDiv">
+    	<div class="header">
+    		<div class="headerContent">
+    			<div class="logoAndNavigation">
+                    <img class="companylogo" src="{!$Resource.Community_Resources + '/llamacircle.png'}" />
+    				<div class="profileMenu">
+    					{!v.profileMenu}
+    				</div>
+                    <div class="navigation">
+                        <aura:iteration items="{!v.navBar}" var="item">{!item}</aura:iteration>
+                    </div>
+                    
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+
+    <div class="mainContentArea">
+    	{!v.body}
+    </div>
+    </div>
+</aura:component>

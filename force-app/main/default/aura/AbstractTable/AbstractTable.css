@@ -1,0 +1,37 @@
+.THIS img{
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.THIS .slds-button{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    padding: 5px;
+    text-transform: uppercase;
+    width: 100px;
+    background-color: token(colorBackgroundButtonBrand);
+    color: token(colorTextButtonBrand);
+}
+
+.THIS .slds-button svg{
+    color: token(inverseText);
+    background-color: token(colorBackgroundButtonBrand);
+    fill: token(colorTextButtonBrand);
+}
+
+.THIS .slds-tile{
+    border-radius: 25px;
+    text-align: center;
+    border: 1px solid token(colorBorder);
+    background-color: token(inverseBackground);
+    color: token(inverseText);
+    padding: 1rem;
+}
+
+.THIS.tileTable > h3 > a{
+    text-shadow: token(headingTextShadow);
+    text-transform: uppercase;
+    color: token(colorTextButtonBrand);
+    font-size: 1.5rem;
+}

@@ -1,0 +1,21 @@
+<aura:component extends="c:Abstract" extensible="true" abstract="true">
+    <aura:attribute name="label" type="String" default="" />
+    <aura:attribute name="listLabel" type="String" default="" />
+    <aura:attribute name="largeColumns" type="Integer" default="1" />
+    <aura:attribute name="mediumColumns" type="Integer" default="1" />
+    <aura:attribute name="smallColumns" type="Integer" default="1" />
+    <aura:attribute name="records" type="Object[]" />
+            <lightning:tile label="{!v.label}" class="tileTable" >
+            	<aura:if isTrue="{!empty(v.records)}">
+            		<ui:outputText value="No records found" />
+            		<aura:set attribute="else">
+		                <lightning:layout horizontalAlign="top"
+		                    verticalAlign="stretch"
+		                    pullToBoundary="large"
+		                    multipleRows="true">
+		                    {!v.body}
+		                </lightning:layout>
+		            </aura:set>
+		        </aura:if>
+		    </lightning:tile>
+</aura:component>
